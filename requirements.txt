@@ -1,0 +1,9 @@
+tensorflow
+pandas
+numpy
+scikit-learn
+matplotlib
+nbformat
+nbclient
+nbconvert
+papermill
