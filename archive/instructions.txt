@@ -1,0 +1,96 @@
+My model is overfitting. Training accuracy reaches ~84% but validation accuracy stays around ~65%, and validation loss increases.
+Please update my Jupyter Notebook (.ipynb) by modifying only the model and training parts.
+Follow these exact instructions:
+
+1. Improve the RNN Model (Replace Old Model Code)
+
+Rewrite my model with these upgrades:
+
+Embedding Layer
+
+Increase embedding dimension to 128
+
+Use Bidirectional LSTM
+
+Use: Bidirectional(LSTM(128, dropout=0.5, recurrent_dropout=0.3))
+
+Add Regularization
+
+Add a Dropout(0.5) layer before the dense layer
+
+Dense Layers
+
+Use:
+
+Dense(64, activation="relu")
+Dropout(0.5)
+Dense(5, activation="softmax")
+
+
+Ensure the output layer still uses 5 units for 5-class classification.
+
+2. Apply Class Weights (Because Ratings Are Often Imbalanced)
+
+Add code to compute class weights:
+
+from sklearn.utils import class_weight
+class_weights = class_weight.compute_class_weight(
+    class_weight="balanced",
+    classes=np.unique(y_train),
+    y=y_train
+)
+class_weights = dict(enumerate(class_weights))
+
+
+Use these class weights in model.fit():
+
+model.fit(..., class_weight=class_weights)
+
+3. Add EarlyStopping (Prevent Overfitting)
+
+Insert:
+
+from tensorflow.keras.callbacks import EarlyStopping
+
+early_stop = EarlyStopping(
+    monitor="val_loss",
+    patience=2,
+    restore_best_weights=True
+)
+
+
+Use in model.fit:
+
+model.fit(..., callbacks=[early_stop])
+
+4. Do NOT Increase the Number of Epochs
+
+Keep epoch count 6–10, because EarlyStopping will handle the rest.
+
+5. Keep Existing Preprocessing and Tokenization Code
+
+Do not modify:
+
+cleaning
+
+tokenizer
+
+padding
+
+train/test split
+
+Only modify MODEL + TRAINING cells.
+
+6. Add Markdown Explanation Cells
+
+Add markdown explaining:
+
+why Bidirectional LSTM helps
+
+why dropout fixes overfitting
+
+why class weights improve balanced accuracy
+
+why EarlyStopping improves generalization
+
+Keep explanations simple for academic purposes.

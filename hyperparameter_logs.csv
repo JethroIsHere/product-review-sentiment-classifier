@@ -1,1 +1,0 @@
-vocab_size,max_length,embedding_dim,lstm_units,dropout,learning_rate,epochs,test_accuracy,timestamp

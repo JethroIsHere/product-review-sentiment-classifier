@@ -1,0 +1,14 @@
+{"review": "sir okay armygreen shorts nice ", "rating": 5}
+{"review": "di pareha\nyong mga size nila may sobrang liit", "rating": 5}
+{"review": "super worth it\nang ganda Sombra grabi order na kayo di kayo magsisisisis sobranh ganda order\nulit ako at ang bilis dumating", "rating": 5}
+{"review": "ganda po salamat", "rating": 5}
+{"review": "maayos pagkadeliver maganda den sya", "rating": 5}
+{"review": "ang gnda nang short nagustohan nang binigyan ko salamat din sa delivery guy\nang bait Niya Thank you po kuya ", "rating": 4}
+{"review": "maganda sya medyo\nmanipis nga lang .. ", "rating": 4}
+{"review": "", "rating": 4}
+{"review": "", "rating": 4}
+{"review": "manipis pla at ska dami himulmol ng sinulid, di maganda ang tahi.. di nko uulit s\ninyo... s madaling salita PANGET NG GAWA", "rating": 2}
+{"review": "madali maponit", "rating": 2}
+{"review": "Unsatisfied. Poor quality. easily torn.", "rating": 1}
+...
+... (file truncated to keep workspace file concise)

@@ -1,8 +1,8 @@
 # Taglish Product Review Sentiment Classifier
 
-This project trains an LSTM-based classifier from scratch to detect sentiment in Tagalog+English (code-switched) product reviews focused on consumer electronics.
+This project trains an LSTM-based classifier from scratch to detect sentiment in Tagalog+English (code-switched) product reviews across general product categories.
 
-- Target product category: Consumer electronics (mobile phones, chargers, headphones, and related accessories).
+- Target product category: General product reviews (mobile phones, chargers, headphones, beauty, home appliances, and other product types).
 
 Notebooks:
 - `data_processor.ipynb` — Taglish-safe text cleaning, tokenization, padding and train/val/test split.
