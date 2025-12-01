@@ -1,13 +1,6 @@
-timestamp,filename,source,rows,license
-timestamp,filename,source,rows,license
-2025-11-28T19:14:25.369987,data\hf_letijo03.csv,hf_letijo03,50290,unknown
-2025-11-28T19:25:00.000000,data\local_only\EricEchemane_reviews.json,EricEchemane_reviews,1001,local-only
-2025-11-28T19:25:00.000001,data\local_only\EricEchemane_reviews.txt,EricEchemane_reviews_txt,1001,local-only
-2025-11-29T03:15:00.000000,data\local_only\scaredmeow_shopee_reviews_tl_binary.csv,scaredmeow/shopee-reviews-tl-binary,40000,unknown
-2025-11-29T03:30:00.000000,data\local_only\scaredmeow_shopee_reviews_tl_stars.csv,scaredmeow/shopee-reviews-tl-stars,15000,unknown
-
-2025-11-29T04:29:44.886527,data/local_only/SEACrowd_shopee_reviews_tagalog.csv,SEACrowd/shopee_reviews_tagalog,15000,mpl-2.0
-2025-11-29T04:43:55.4671453Z,data\\local_only\\scaredmeow_shopee_reviews_tl_binary.csv,scaredmeow/shopee-reviews-tl-binary,40000,odc-by
-mteb/filipino_shopee_reviews,huggingface,data/local_only\mteb_filipino_shopee_reviews.csv,15000,unknown,downloaded via script
-mteb/FilipinoShopeeReviewsClassification,huggingface,data\local_only\mteb_FilipinoShopeeReviewsClassification.csv,14596,mpl-2.0,downloaded
-github/EricEchemane,github,data\local_only\ericEchemane_reviews.csv,1985,unknown,downloaded raw repo files
+dataset_name,source,rows,size_kb,download_date,local_filename
+hf_letijo03,https://huggingface.co/datasets/letijo03/sentiment-analysis-taglish-shopee-comment,50290,7340,2025-11-28 19:14:25,hf_letijo03.csv
+scaredmeow/shopee-reviews-tl-stars,https://huggingface.co/datasets/scaredmeow/shopee-reviews-tl-stars,15000,2500,2025-11-29 03:30:00,scaredmeow_shopee_reviews_tl_stars.csv
+SEACrowd/shopee_reviews_tagalog,https://huggingface.co/datasets/SEACrowd/shopee_reviews_tagalog,15000,2500,2025-11-29 04:29:44,SEACrowd_shopee_reviews_tagalog.csv
+mteb/filipino_shopee_reviews,https://huggingface.co/datasets/mteb/filipino_shopee_reviews,15000,2500,2025-11-29 05:00:00,mteb_filipino_shopee_reviews.csv
+kornwtp/lazada-review-fil-classification,https://huggingface.co/datasets/kornwtp/lazada-review-fil-classification,989,84,2025-12-01 present,kornwtp_lazada_review_fil.csv
