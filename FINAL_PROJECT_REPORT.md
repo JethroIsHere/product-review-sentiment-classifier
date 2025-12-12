@@ -484,7 +484,14 @@ This project provided valuable hands-on experience in:
 3. Creating a practical solution for Philippine e-commerce
 
 ### Acknowledgments
-- Dataset sources: Shopee and Lazada public review datasets
+- Dataset sources:
+   - SEACrowd Shopee Reviews (Tagalog)
+   - ScaredMeow Shopee Reviews (Tagalog, star ratings)
+   - MTEB Filipino Shopee Reviews Classification
+   - KORNWTP Lazada Reviews (Filipino)
+   - DestinyArx Comments Datasets (Taglish)
+   - Sentishop Tables Export (Django)
+   - Marc3ee Taglish Reviews (combined)
 - TensorFlow and Keras documentation and community
 - CCS 248 course materials and guidance
 
