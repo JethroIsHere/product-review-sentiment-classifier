@@ -499,15 +499,13 @@ This project provided valuable hands-on experience in:
 
 ## References
 
-1. Cho, K., et al. (2014). "Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation." *EMNLP*.
+1. Chung, J., Gulcehre, C., Cho, K., & Bengio, Y. (2014). "Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling." *arXiv*. https://arxiv.org/abs/1412.3555
 
-2. Schuster, M., & Paliwal, K. K. (1997). "Bidirectional recurrent neural networks." *IEEE Transactions on Signal Processing*.
+2. Kingma, D. P., & Ba, J. (2017). "Adam: A Method for Stochastic Optimization." *arXiv*. https://arxiv.org/abs/1412.6980
 
-3. Zhang, X., Zhao, J., & LeCun, Y. (2015). "Character-level Convolutional Networks for Text Classification." *NIPS*.
+3. TensorFlow Documentation. (2024). https://www.tensorflow.org/
 
-4. Vilares, D., et al. (2015). "Sentiment Analysis on Monolingual, Multilingual and Code-Switching Twitter Corpora." *Proceedings of the 6th Workshop on Computational Approaches to Subjectivity, Sentiment and Social Media Analysis*.
-
-5. TensorFlow Documentation. (2024). https://www.tensorflow.org/
+4. Keras Documentation. (2024). https://keras.io/
 
 ---
 
