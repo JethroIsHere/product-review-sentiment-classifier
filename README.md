@@ -173,15 +173,29 @@ review = "Maganda quality pero medyo mahal"
 
 ## 📈 Results
 
-### Final Model Performance
+### Best Model Performance (Hyperparameter Tuning Config 3)
+
+| Metric | Score |
+|--------|-------|
+| **Test Accuracy** | **65.12%** |
+| **Macro F1** | 0.3954 |
+| **Weighted F1** | 0.6512 |
+
+**Model:** `taglish_rnn_best.keras` / `taglish_rnn_best.h5` (Config 3: vocab_size=10K)
+
+### Main Notebook Model Performance
 
 | Metric | Score |
 |--------|-------|
 | **Test Accuracy** | **63.97%** |
-| **Macro F1** | 0.3624 |
-| **Weighted F1** | 0.6329 |
+| **Macro F1** | ~0.36 |
+| **Weighted F1** | ~0.64 |
 
-### Per-Class Performance
+**Model:** `taglish_rnn_model.h5` (same hyperparameters, includes minority class oversampling)
+
+**Note:** Both models use identical architecture (vocab=10K, embed=128, GRU=32, dropout=0.5, lr=5e-5). The 2.15% accuracy difference is due to random weight initialization, stochastic training (dropout, batch shuffling), and data augmentation differences (main notebook includes oversampling).
+
+### Per-Class Performance (Best Model - 65.12%)
 | Star Rating | Precision | Recall | F1 | Support |
 |-------------|-----------|--------|-----|---------|
 | 1-star ⭐ | 0.25 | 0.83 | 0.38 | 450 |
@@ -206,10 +220,13 @@ product-review-sentiment-classifier/
 │   └── predict.ipynb                 # Inference
 │
 ├── artifacts/
-│   ├── taglish_rnn_model.h5          # Trained model
+│   ├── taglish_rnn_model.h5          # Final trained model (main notebook)
+│   ├── taglish_rnn_best.keras        # Best model from tuning (65.12% accuracy)
+│   ├── taglish_rnn_best.h5           # Best model (H5 format)
 │   └── tokenizer.pickle              # Tokenizer
-│
-├── logs/
+│     # Summary of 7 runs
+│   ├── hyperparameter_tuning_full_results.json  # Detailed metrics & histories
+│   └── hyperparameter_comparison.png            # Performance visualization
 │   ├── hyperparameter_tuning_results.csv
 │   └── hyperparameter_comparison.png
 │
